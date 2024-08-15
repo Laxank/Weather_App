@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backg"
+    tools:context=".weatherforcast">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/Container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/back"
+                    android:layout_width="35dp"
+                    android:layout_height="30dp"
+                    android:backgroundTint="@color/transperent"
+                    android:foreground="@drawable/baseline_arrow_back_24"
+                    android:clickable="true">
+
+                </Button>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingVertical="25dp"
+            android:paddingHorizontal="25dp"
+            >
+            <LinearLayout
+                android:id="@+id/mainContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+
+
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/News"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nextweek"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/rectengal"
+                    android:padding="20dp"
+                    android:orientation="vertical"
+
+                    >
+                    <TextView
+                        android:id="@+id/Tomorrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tomorrow"
+                        android:textColor="@color/white"
+                        android:textSize="30dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/temp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/archivo_black"
+                                android:text="29°C"
+                                android:textColor="@color/white"
+                                android:textSize="55dp"/>
+                            <TextView
+                                android:id="@+id/ditail"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="cloudy"
+                                android:textColor="@color/white"
+                                android:textSize="20dp"
+                                android:layout_gravity="center"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </androidx.recyclerview.widget.RecyclerView>
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+</androidx.core.widget.NestedScrollView>
